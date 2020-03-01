@@ -1,0 +1,3 @@
+project=dev_to_voice
+test=rspec
+template=erb

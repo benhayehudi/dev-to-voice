@@ -1,0 +1,8 @@
+/public/assets*
+/tmp
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+private.key
