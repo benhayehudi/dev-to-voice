@@ -3,5 +3,5 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
-post '/voice/receive', to: 'voice#receive'
-post '/voice/event', to: 'voice#event'
+post '/receive', to: 'voice#receive'
+post '/event', to: 'voice#event'

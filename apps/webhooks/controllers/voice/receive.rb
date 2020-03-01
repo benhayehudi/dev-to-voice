@@ -12,6 +12,14 @@ module Webhooks
         @nexmo.config.private_key = ENV['NEXMO_PRIVATE_KEY']
 
         def call(params)
+          ncco = [
+            {
+              :action => 'talk',
+              :text => 'Hello from Nexmo',
+              :voiceName => 'Amy'
+            }
+          ].to_json
+          self.body = ncco
           puts params.to_h
         end
       end

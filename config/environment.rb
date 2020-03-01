@@ -9,6 +9,7 @@ require_relative '../apps/webhooks/application'
 Hanami.configure do
   mount Webhooks::Application, at: '/webhooks'
   mount Web::Application, at: '/'
+  
   middleware.use Hanami::Middleware::BodyParser, :json
 
   model do
